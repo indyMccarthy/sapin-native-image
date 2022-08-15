@@ -46,9 +46,9 @@ jobs:
             file: ./Dockerfile
             # Note: tags has to be all lower-case
             tags: |
-              ghcr.io/indymccarthy/sapin:latest
-              ghcr.io/indymccarthy/sapin:${{ env.RELEASE_VERSION }}
-              ghcr.io/indymccarthy/sapin:${{ github.sha }}
+              ghcr.io/indymccarthy/sapin-native-image:latest
+              ghcr.io/indymccarthy/sapin-native-image:${{ env.RELEASE_VERSION }}
+              ghcr.io/indymccarthy/sapin-native-image:${{ github.sha }}
               gcr.io/${{ secrets.GCP_PROJECT_ID }}/sapin-native-image:latest
               gcr.io/${{ secrets.GCP_PROJECT_ID }}/sapin-native-image:${{ env.RELEASE_VERSION }}
               gcr.io/${{ secrets.GCP_PROJECT_ID }}/sapin-native-image:${{ github.sha }}
